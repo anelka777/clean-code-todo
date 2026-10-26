@@ -1,0 +1,29 @@
+{
+  "name": "clean-code-todo",
+  "version": "1.0.0",
+  "description": "Учебный репозиторий для задания Clean Code курса RS School Fullstack Engineering.",
+  "private": true,
+  "type": "module",
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.{js,html,css,json,md}": "prettier --check"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anelka777/clean-code-todo.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
+    "prettier": "^3.9.10"
+  }
+}
